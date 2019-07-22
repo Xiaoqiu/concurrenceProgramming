@@ -18,6 +18,13 @@ chapter1 Semaphore和Exchanger的使用
 
 ### 1.1.4 方法acquireUninterruptibly()的使用
 - 使得等待进入acquire()的方法的线程不允许被中断
-- 
+
+### 1.1.5 availablePermits() drainPermits()
+- availablePermits() : 返回Semaphore对象中当前可用的许可个数，
+- drainPermits() : 返回立即可用的许可个数，并且将可用的许可设置为0
+### 1.1.6 getQueueLength() hasQueuedThread()
+- getQueueLength() : 取得等待许可的线程个数
+- hasQueuedThread()：判断有没有线程在等待这个许可
+
 ## 1.2 Exchanger的使用
 - 两个线程之间方便通信
